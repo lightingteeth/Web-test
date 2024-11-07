@@ -1,0 +1,77 @@
+site_name: 603EnrollmentManual
+site_url:
+
+repo_name: MasterOfOptical603
+repo_url: https://github.com/MasterOfOptical603
+
+site_description: 603EnrollmentManual
+
+theme:
+  name: material
+  custom_dir: overrides
+  language: zh
+
+  #logo
+  icon:
+    repo: fontawesome/brands/github
+    logo: material/library-shelves
+  favicon: assets/favicon/favicon.png
+
+  #修改颜色
+  palette:
+    - scheme: slate
+      primary: deep purple
+      toggle:
+        icon: material/weather-night
+        name: dark mode
+
+    - scheme: default
+      primary: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: light mode
+
+  features:
+    - header.autohide
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - navigation.indexes
+    - search.highlight
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/MasterOfOptical603
+
+plugins:
+  - search
+  - blog:
+      post_readtime: false
+  - tags
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+nav:
+  - Home: "index.md"
+  - Members: "members/index.md"
+  - Research: "research/index.md"
+  - Team: "team/index.md"
+  - Docs: 
+    - "documents/index.md"
+    - 办事经验:
+      - "documents/办事经验/日常报销流程.md"
+      - "documents/办事经验/专利申请流程.md"
+  - Server: "server/index.md"
+  - Blog: 
+    - "blog/index.md"
